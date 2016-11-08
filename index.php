@@ -105,12 +105,10 @@ while( $ligne = $stmt->fetch() ) // boucle sur chaque enregistrement
 		echo '<td class="grand">' . $ligne['title']  . '</td>';
 		echo '<td class="moyen">' . $ligne['duration']  . '</td>';
 		echo '<td class="moyen">' . $ligne['year']  . '</td>';
-    echo '<td class="petit"><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#addBtnEditModal" name="'.$ligne['id'].'">Editmodal</button></td></tr>';
-
 		echo '<td class="petit"><a name = "'. $ligne['id'].'" class="btn btn-warning btn-sm" href=function/edit.php?id=' . $ligne['id']  . '>edit</a></td>';
 		echo '<td class="petit"><a class="btn btn-danger btn-sm" href=function/del.php?id=' . $ligne['id']  . '>del</a></td>';
 		echo '<td class="petit"><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#addBtnModal">add</button></td></tr>';
-    
+
 }
 echo "</tbody>";
 echo "</table>";

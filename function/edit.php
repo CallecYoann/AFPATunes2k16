@@ -20,29 +20,4 @@ $editselect->execute();
     <button type="submit" class="btn btn-success">OK</button>
 
   </form>
-
-<?php
-
-
-
-
-
-
-if(isset(editBtn)){
-$class = modal-open
-}
-else {
-  $class=""
-}
-
-
-
-
-
-if (isset(editBtnModal)) {
-$class=""
-$style=""
-}
-else {
-
-}
+ <!-- Kikoo LuLuFouFou !!!!! -->
